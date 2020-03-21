@@ -1,0 +1,8 @@
+1- well, you'll need to pull the database image .
+2-build an image for th spring boot by running the following command in the directory of the project
+	-docker build -t flairstech-task-final .
+3-run the following command in the directory of the project
+	-docker-compose up
+
+and you're good to go.
+Thanks
