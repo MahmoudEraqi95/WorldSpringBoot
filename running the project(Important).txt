@@ -4,5 +4,12 @@
 3-run the following command in the directory of the project
 	-docker-compose up
 
+PS- Iam usin Docker Toolbox, not Docker Desktop as it requires windows 10 Pro, which i don't have , 
+using docker toolbox doesn't allow you to run you container in localhost, instead it gives you a default ip 
+which is 192.168.99.100, so in case you've a trouble connecting from localhost, in you Docker Desktop, 
+maybe you can try this ip.
+
+you can check this url: https://forums.docker.com/t/how-to-use-localhost-instead-of-192-168-99-100/54098
+
 and you're good to go.
 Thanks
