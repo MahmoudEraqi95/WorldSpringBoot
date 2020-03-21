@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: ghusta/postgres-world-db
+    container_name: db
+
+    ports:
+    - "5432:5432"
+
+  App:
+    image: flairstech-task-final
+    container_name: flairstech-task-container
+    ports:
+    - "8080:8080"
