@@ -1,7 +1,8 @@
 package com.eraqi.flairstechtask.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jdk.nashorn.internal.ir.annotations.Ignore;
+
+import javax.persistence.*;
 
 @Entity(name = "country")
 public class Country {
@@ -13,7 +14,17 @@ public class Country {
     private String continent;
     private String population;
     private String lifeExpectancy;
-    private String countryLanguage;
+
+    @Transient
+    private String country_language;
+
+    public String getCountry_language() {
+        return country_language;
+    }
+
+    public void setCountry_language(String country_language) {
+        this.country_language = country_language;
+    }
 
     public String getCode() {
         return code;
@@ -55,11 +66,7 @@ public class Country {
         this.lifeExpectancy = lifeExpectancy;
     }
 
-    public String getCountryLanguage() {
-        return countryLanguage;
-    }
 
-    public void setCountryLanguage(String countryLanguage) {
-        this.countryLanguage = countryLanguage;
-    }
+
+
 }
